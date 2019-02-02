@@ -1,0 +1,20 @@
+hidl_interface {
+    name: "vendor.qti.hardware.wifi.supplicant@2.0",
+    root: "vendor.qti.hardware.wifi",
+    srcs: [
+        "ISupplicantVendor.hal",
+        "ISupplicantVendorIface.hal",
+        "ISupplicantVendorNetwork.hal",
+        "ISupplicantVendorP2PIface.hal",
+        "ISupplicantVendorP2PIfaceCallback.hal",
+        "ISupplicantVendorStaIface.hal",
+        "ISupplicantVendorStaIfaceCallback.hal",
+        "ISupplicantVendorStaNetwork.hal",
+    ],
+    interfaces: [
+        "vendor.qti.hardware.wifi.supplicant@1.0",
+        // TODO: does the android.hw interface have to be included here?
+        "android.hidl.base@1.0",
+    ],
+    gen_java: true,
+}
